@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="terminal.js"></script>
+</head>
+<body>
+<script>
+var t = new Terminal()
+t.setHeight('200px')
+t.setWidth('600px')
+document.body.appendChild(t.html)
+for(let i = 0; i < 100; i++) {
+  t.print('Hello, world!')
+}
+</script>
+</body>
+</html>
